@@ -95,7 +95,7 @@ public class UserDetails {
 		}
 	}
 	public void upperCase(String upperCase) {
-		regex = "^(?=.*[A-Z]).{8,}$";
+		regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*#?&]{1})[A-Za-z\\d@$!%*?&]{8,}$";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(upperCase);
 		if (matcher.matches()) {
