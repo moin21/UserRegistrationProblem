@@ -35,9 +35,21 @@ public class UserRegex {
 		userDetails.firstName(lastName);
 	}
 
+	/**
+	 * Method to take user input for email
+	 */
 	public void userEmail() {
 		System.out.println("Enter Your email : ");
 		String email = scanner.next();
 		userDetails.email(email);
+	}
+
+	/**
+	 * Method to take user input for mobile
+	 */
+	public void userMobile() {
+		System.out.println("Enter Your mobile : ");
+		String mobile = scanner.next();
+		userDetails.mobile(mobile);
 	}
 }
