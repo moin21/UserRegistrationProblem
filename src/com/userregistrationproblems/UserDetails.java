@@ -94,4 +94,14 @@ public class UserDetails {
 			System.out.println("Sorry!! Input doesn't follow required regex");
 		}
 	}
+	public void upperCase(String upperCase) {
+		regex = "^(?=.*[A-Z]).{8,}$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(upperCase);
+		if (matcher.matches()) {
+			System.out.println("Input follows required regex");
+		} else {
+			System.out.println("Sorry!! Input doesn't follow required regex");
+		}
+	}
 }
