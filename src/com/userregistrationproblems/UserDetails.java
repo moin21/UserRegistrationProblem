@@ -78,4 +78,20 @@ public class UserDetails {
 			System.out.println("Sorry!! Input doesn't follow required regex");
 		}
 	}
+
+	/***
+	 * Method to match password with regex
+	 * 
+	 * @param password - User's password
+	 */
+	public void password(String password) {
+		regex = "^[a-zA-Z0-9]{8,}$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(password);
+		if (matcher.matches()) {
+			System.out.println("Input follows required regex");
+		} else {
+			System.out.println("Sorry!! Input doesn't follow required regex");
+		}
+	}
 }

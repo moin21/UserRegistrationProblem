@@ -52,4 +52,14 @@ public class UserRegex {
 		String mobile = scanner.next();
 		userDetails.mobile(mobile);
 	}
+
+	/**
+	 * Method to take user input for password
+	 */
+	public void userPassword() {
+		System.out.println("Enter Your password : ");
+		String password = scanner.next();
+		userDetails.password(password);
+	}
+
 }
