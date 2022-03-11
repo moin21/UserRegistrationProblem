@@ -11,7 +11,8 @@ public class Main {
 	 */
 	public void choice() {
 		while (true) {
-			System.out.println("Enter 1 To Verify First Name\n" + "Enter 2 To Verify Last Name\n" + "Enter 3 To Verify email\n" + "Enter 0 To Exit");
+			System.out.println("Enter 1 To Verify First Name\n" + "Enter 2 To Verify Last Name\n"
+					+ "Enter 3 To Verify email\n" + "Enter 0 To Exit");
 			int choice = scanner.nextInt();
 			switch (choice) {
 			case 1:
