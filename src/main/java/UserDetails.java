@@ -26,6 +26,29 @@ public class UserDetails {
 		Matcher matcher = pattern.matcher(firstName);
 		return matcher.matches();
 	}
+	/**
+	 *  In this method we will check for exception for the first name.
+	 *  If the first name is valid then it will print valid.
+	 *  If the first name is Invalid then it will throw the exception and print the message.
+	 * @param firstName - Passed first name to this method.
+	 * @return - Returns a boolean value true if correct pattern.
+	 * @throws InputInvalidException - Throws the custom exception.  
+	 */
+	public boolean testFirstName(String firstName) throws InvalidInputException {
+        try {
+            if (!firstName(firstName)) {
+                throw new InvalidInputException("Entered FirstName is Invalid\n" +
+                        "First name starts with Capital Letter and has\n" +
+                        "minimum 3 characters");
+            } else {
+                System.out.println("Entered FirstName is Valid");
+            }
+        } catch (InvalidInputException e) {
+            System.out.println("Exception is Occurred " + e);
+            e.printStackTrace();
+        }
+        return firstName(firstName);
+    }
 
 	/**
 	 * Method to match last name with regex
@@ -39,7 +62,29 @@ public class UserDetails {
 		Matcher matcher = pattern.matcher(lastName);
 		return matcher.matches();
 	}
-
+	/**
+	 *  In this method we will check for exception for the last name.
+	 *  If the last name is valid then it will print valid.
+	 *  If the last name is Invalid then it will throw the exception and print the message.
+	 * @param lastName - Passed last name to this method.
+	 * @return - Returns a boolean value true if correct pattern.
+	 * @throws InputInvalidException - Throws the custom exception.  
+	 */
+	public boolean testLastName(String lastName) throws InvalidInputException {
+        try {
+            if (!lastName(lastName)) {
+                throw new InvalidInputException("Entered LastName is Invalid\n" +
+                        "Last name starts with Capital Letter and has\n" +
+                        "minimum 3 characters");
+            } else {
+                System.out.println("Entered LastName is Valid");
+            }
+        } catch (InvalidInputException e) {
+            System.out.println("Exception is Occurred " + e);
+            e.printStackTrace();
+        }
+        return lastName(lastName);
+    }
 	/**
 	 * Method to match email with regex
 	 * 

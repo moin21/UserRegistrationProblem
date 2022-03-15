@@ -19,12 +19,12 @@ public class RegexTest {
 	 */
 	@Test
 	public void testFistName() {
-		boolean result = userDetails.firstName("Moinuddin");
+		boolean result = userDetails.firstName(null);
 		assertTrue(result);
 	}
 
 	/**
-	 * Methoed to verify last name
+	 * Method to verify last name
 	 */
 	@Test
 	public void testLastName() {
