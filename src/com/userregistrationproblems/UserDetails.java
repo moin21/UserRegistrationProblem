@@ -94,6 +94,7 @@ public class UserDetails {
 			System.out.println("Sorry!! Input doesn't follow required regex");
 		}
 	}
+
 	public void upperCase(String upperCase) {
 		regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*#?&]{1})[A-Za-z\\d@$!%*?&]{8,}$";
 		Pattern pattern = Pattern.compile(regex);
