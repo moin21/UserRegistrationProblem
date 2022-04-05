@@ -3,7 +3,19 @@
   <groupId>briodgelabz</groupId>
   <artifactId>UserRegistrations</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>User</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>15</source>
+                    <target>15</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>User</name>
 <dependencies>
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
